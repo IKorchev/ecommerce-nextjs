@@ -1,16 +1,10 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+@layer base {
+  .cart {
+    @apply absolute z-0 right-0 bg-white text-black border shadow-lg p-5 max-h-96 
+    overflow-auto scrollbar scrollbar-thumb-gray-700 scrollbar-track-gray-100 scrollbar-thin;
+  }
 }
