@@ -14,13 +14,27 @@ module.exports = {
       inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
       none: "none",
     },
-
-    extend: {},
+    fontFamily: {
+      body: "'Merriweather', serif",
+    },
+    scale: {
+      101: "1.01",
+      102: "1.02",
+      103: "1.03",
+      103: "1.03",
+      105: "1.05",
+    },
+    extend: {
+      height: {
+        100: "500px",
+      },
+    },
   },
   variants: {
     extend: {
       bixShadow: ["focus"],
+      scale: ["active"],
     },
   },
-  plugins: [require("tailwind-scrollbar")],
+  plugins: [require("tailwind-scrollbar"), require("tailwindcss-textshadow")],
 }

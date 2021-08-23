@@ -1,20 +1,25 @@
 import Head from "next/head"
 import "tailwindcss/tailwind.css"
+import Cart from "../components/Cart"
+import Hero from "../components/Hero"
 import Main from "../components/Main"
 import Navbar from "../components/Navbar"
-
 export default function Home({ products }) {
   return (
-    <div className=' container mx-auto'>
+    <div className=' relative overflow-x-hidden z-20'>
       <Head>
         <title>Ecommerce Shop | Home</title>
         <meta name='description' content='Ecommerce Shop' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <header>
+      <Cart />
+      <header className='z-0'>
         <Navbar />
+        <Hero />
       </header>
-      <Main data={products} />
+      <div className=' container mx-auto'>
+        <Main data={products} />
+      </div>
     </div>
   )
 }
