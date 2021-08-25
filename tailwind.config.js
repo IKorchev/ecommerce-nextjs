@@ -33,7 +33,7 @@ module.exports = {
   variants: {
     extend: {
       bixShadow: ["focus"],
-      scale: ["active"],
+      scale: ["focus"],
     },
   },
   plugins: [require("tailwind-scrollbar"), require("tailwindcss-textshadow")],

@@ -1,9 +1,7 @@
 import gsap from "gsap"
 import Image from "next/image"
 import Image1 from "../assets/clothes-1.jpg"
-import Image2 from "../assets/clothes-2.jpg"
-import Image3 from "../assets/clothes-3.jpg"
-const data = [Image1, Image2, Image3]
+
 
 const Hero = () => {
   return (
@@ -17,8 +15,8 @@ const Hero = () => {
             <h1 className='text-5xl text-shadow-lg font-bold z-10 text-white bg-black text-center'>
               Shop now
             </h1>
-            <h1 className='text-2xl text-shadow-lg font-bold z-10 mt-5 text-white bg-black text-center'>
-              Shop now
+            <h1 className='text-md text-shadow-lg font-bold z-10 mt-5 text-white bg-black text-center'>
+              EVERYTHING 20% OFF
             </h1>
           </div>
         </div>
