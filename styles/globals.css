@@ -15,4 +15,7 @@
     @apply text-black bg-white w-96 fixed h-screen top-0 -right-96 shadow-lg py-24  z-50
     overflow-auto scrollbar scrollbar-thumb-gray-700 scrollbar-track-gray-100 scrollbar-thin;
   }
+  .footer-link {
+    @apply text-gray-600 hover:underline
+  }
 }

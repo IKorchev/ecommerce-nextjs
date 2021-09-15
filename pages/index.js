@@ -1,12 +1,13 @@
 import Head from "next/head"
 import "tailwindcss/tailwind.css"
 import Cart from "../components/Cart"
+import Footer from "../components/Footer"
 import Hero from "../components/Hero"
 import Main from "../components/Main"
 import Navbar from "../components/Navbar"
 export default function Home({ products }) {
   return (
-    <div className=' relative overflow-x-hidden z-20'>
+    <div className='relative overflow-x-hidden z-20'>
       <Head>
         <title>Ecommerce Shop | Home</title>
         <meta name='description' content='Ecommerce Shop' />
@@ -20,6 +21,7 @@ export default function Home({ products }) {
       <div className=' container mx-auto'>
         <Main data={products} />
       </div>
+      <Footer />
     </div>
   )
 }
