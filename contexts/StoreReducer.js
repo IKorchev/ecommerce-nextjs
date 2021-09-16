@@ -4,7 +4,6 @@ const reducer = (state, action) => {
   switch (action.type) {
     case "ADD_TO_CART":
       if (!item) {
-        console.log(localStorage)
         return {
           items: [...state.items, action.payload],
         }

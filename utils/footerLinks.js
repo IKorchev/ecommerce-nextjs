@@ -29,7 +29,7 @@ const footerLinks = [
     title: "Shopping With Us",
     links: [
       "Our App",
-      "New Look Card",
+      "Ecomm Card",
       "Gift Cards",
       "Student Discount",
       "Black Friday",
@@ -40,7 +40,7 @@ const footerLinks = [
     title: "Company Information",
     links: [
       "Store Locator",
-      "About New Look",
+      "About Us",
       "Careers",
       "Our Charity Foundation",
       "Modern Slavery Statement",

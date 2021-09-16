@@ -5,7 +5,6 @@ const Main = ({ data }) => {
   const jewelery = data.filter((item) => item.category === "jewelery")
   const electronics = data.filter((item) => item.category === "electronics")
   const womensClothing = data.filter((item) => item.category === "women's clothing")
-  console.log(mensClothing, data)
   return (
     <main className='overflow-hidden px-3 md:px-0 pt-5 pb-24 container'>
       <CategorySection data={mensClothing} title="Men's Clothing" />
