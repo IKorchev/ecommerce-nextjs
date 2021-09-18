@@ -10,6 +10,13 @@ export default function Home({ products }) {
     <div className='relative overflow-x-hidden z-20'>
       <Head>
         <title>Ecommerce Shop | Home</title>
+        <meta property='og:title' content='Ecomm Shop | Home' />
+        <meta property='og:url' content='https://ecommerce-ikorchev.vercel.app/' />
+        <meta property='og:image' content='https://i.ibb.co/YW6T1vp/Ecommerce-Shop.png' />
+        <meta
+          property='og:image:secure_url'
+          content='https://i.ibb.co/YW6T1vp/Ecommerce-Shop.png'
+        />
         <meta name='description' content='Ecommerce Shop' />
         <link rel='icon' href='/favicon.ico' />
       </Head>

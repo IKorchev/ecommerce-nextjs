@@ -1,20 +1,16 @@
 import ShoppingCartIcon from "@heroicons/react/outline/ShoppingCartIcon"
 import UserIcon from "@heroicons/react/outline/UserIcon"
 import { useStore } from "../contexts/StoreContext"
-
+import Link from "next/link"
 const Navbar = () => {
   const { state, cartShowHandler } = useStore()
   return (
     <nav
       className='flex justify-between
     px-12 mx-auto items-center fixed top-0 z-20 py-2 bg-gray-100 w-full '>
-      <a
-        href='https://google.com/'
-        target='_blank'
-        rel='noreferrer'
-        className='logo h-full'>
-        <h1 className='text-black text-2xl px-5 py-5'>Ecomm</h1>
-      </a>
+      <Link passHref href='/' target='_blank' rel='noreferrer' className='logo h-full'>
+        <h1 className='text-black text-2xl px-5 py-5 font-bold'>Ecomm</h1>
+      </Link>
       <div className='flex items-center'>
         <button className='text-lg font-semibold mr-5 rounded-full p-2 text-gray-800 translate duration-300 hover:bg-gray-200'>
           <UserIcon className='h-7' />
