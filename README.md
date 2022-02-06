@@ -1,8 +1,9 @@
 # Ecommerce website
 
+[DEMO LINK](https://ecommerce-ikorchev.vercel.app/) -- Deployed on Vercel
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with create-next-app and [TailwindCSS](https://tailwindcss.com/)
 
-Using The Fakestore API to display items to the user.
 
 Features functional checkout with Stripe.
 
