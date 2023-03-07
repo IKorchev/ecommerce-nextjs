@@ -8,15 +8,11 @@ const Cart = () => {
   const { state, cartIsShown, cartShowHandler } = useStore()
   const [price, setPrice] = useState(0)
 
-  const handleCheckout = async (e) => {
-    e.preventDefault()
-    handleCartCheckout(state.items)
-  }
+  const handleCheckout = () => handleCartCheckout(state.items)
+
   useEffect(() => {
     // get prices for whole cart
-    const prices = state.items
-      .map((el) => el.quantity * el.price)
-      ?.reduce((a, b) => a + b, 0)
+    const prices = state.items.map((el) => el.quantity * el.price)?.reduce((a, b) => a + b, 0)
     setPrice(prices)
   }, [state])
   return (
@@ -51,10 +47,10 @@ const Cart = () => {
 
         <button
           onClick={handleCheckout}
-          className='font-semibold mt-8 bg-green-800 p-3 rounded-md translate hover:focus:bg-green-700 text-xl text-white'
+          className='font-semibold mt-8 bg-green-800 p-3 translate hover:focus:bg-green-700 text-lg text-white'
           type='submit'
           role='link'>
-          Checkout
+          Proceed to checkout securely
         </button>
       </div>
     </div>

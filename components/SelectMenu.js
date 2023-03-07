@@ -6,9 +6,7 @@ const SelectMenu = ({ setQuantity, options }) => {
   return (
     <select
       className='cursor-pointer pr-4 pl-2 border border-gray-500 md:py-1 p-2 rounded-md'
-      onChange={(e) => {
-        setQuantity(e.target.value)
-      }}>
+      onChange={(e) => setQuantity(parseInt(e.target.value))}>
       {optionsArr.map((el) => {
         return (
           <option className='text-lg py-5' key={el} value={el}>
